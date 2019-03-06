@@ -1,0 +1,44 @@
+<?php
+use Illuminate\Routing\Router;
+$router->group(['prefix' => '/media'], function (Router $router){
+	 $router->get('/getAll',[
+        "uses"=>"MediaController@getAll",
+        "middleware"=>[]
+    ]);
+     $router->get('/lang',[
+        "uses"=>"MediaController@lang",
+        "middleware"=>[]
+    ]);
+	$router->post('/createFolder',[
+        "uses"=>"MediaController@createFolder",
+        "middleware"=>[]
+    ]);
+    $router->get('/search',[
+        "uses"=>"MediaController@search",
+        "middleware"=>[]
+    ]);
+    $router->post('/move',[
+        "uses"=>"MediaController@move",
+        "middleware"=>[]
+    ]);
+    $router->post('/recycle',[
+        "uses"=>"MediaController@recycle",
+        "middleware"=>[]
+    ]);
+    $router->post('/restore',[
+        "uses"=>"MediaController@restore",
+        "middleware"=>[]
+    ]);
+    $router->post('/delete',[
+        "uses"=>"MediaController@delete",
+        "middleware"=>[]
+    ]);
+    $router->post('/uploadFile',[
+        "uses"=>"MediaController@uploadFile",
+        "middleware"=>[]
+    ]);
+    $router->post('/uploadImage',[
+        "uses"=>"MediaController@uploadImage",
+        "middleware"=>[]
+    ]);
+});

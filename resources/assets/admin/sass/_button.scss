@@ -1,0 +1,52 @@
+._btn{
+	display: flex;
+	align-items: center;
+	border:solid 1px $border-color;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 50px;
+	color: $text-color;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	>span{
+		margin-left: 5px;
+	}
+	&-group{
+		list-style: none;
+		margin:0px;
+		padding: 0px;
+		li{
+			display: inline-flex;
+			justify-content: center;
+			vertical-align: middle;
+			._search{
+				width: 320px;
+				position: relative;
+				a.setting_search{
+					position: absolute;
+					left: 4px;
+					top: 6px;
+					z-index: 1;
+					color: $border-color;
+					&:hover{
+						color: $text-color;
+					}
+				}
+				>div{
+					margin-bottom: 0px;
+					input{
+						border-radius: 30px;
+						padding-left: 30px;
+					}
+				}
+			}
+		}
+	}
+	&:focus{
+		outline: none;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}

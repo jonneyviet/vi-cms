@@ -1,0 +1,12 @@
+.panel{
+	display: block;
+	border:solid 1px $border-color;
+	border-radius: 5px;
+	overflow: hidden;
+	.panel-heading{
+		background-color: $bg-color;
+		display: flex;
+    	align-items: center;
+    	padding: 10px;
+	}
+}

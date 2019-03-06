@@ -1,0 +1,90 @@
+table{
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  td,th{
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 3px;
+  }
+  th:first-child,td:first-child{
+    width: 50px;
+    text-align: left;
+  }
+  th{
+    background-color: #dbdbdb;
+    padding: 10px 3px;
+    &:last-child{
+      width: 200px;
+    }
+  }
+  td{
+    &:last-child{
+      width: 200px;
+      text-align: center;
+    }
+  }
+
+  ._list_btn{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    li{
+      a{
+        color: #636b6f;
+        padding: 0px 10px;
+      }
+    }
+  }
+  ._not_data{
+    text-align: center;
+    padding: 10px;
+  }
+}
+.table{
+    &_type_01{
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+       table{
+          white-space: nowrap;
+          width: 100%;
+          max-width: 100%;
+          th.name{
+            width: 35%;
+          }
+          th.lang{
+            width: 50px;
+          }
+          th.type{
+            width: 100px;
+          }
+          th.function{
+            width: 70px;
+            text-align: center;
+          }
+          th.status{
+            width: 70px;
+          }
+          th.date{
+            width: 153px;
+          }
+          th.child{
+            width: 70px;
+          }
+          td{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:last-child{
+              width: 70px;
+            }
+          }
+       }
+    }
+  }
